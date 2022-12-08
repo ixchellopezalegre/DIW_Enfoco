@@ -1,0 +1,155 @@
+
+
+.topheader{    
+    background-color: var(--fondo-1);
+    box-shadow: var(--sombra-hd);
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 950;
+}
+
+.topnav{
+    /*Elementos en fila*/
+    display: flex;
+    /*Espacio distribuido entre los dos*/
+    justify-content: space-between;
+    padding: 8px;
+    /* max-width: 980px; */
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+    align-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--texto-2);
+    width: 100%;
+}
+.logo img{
+    height: 48px;
+}
+
+/* Menu*/
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    padding: 0px 16px;
+}
+
+.menu a{
+    color: var(--texto-1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after{
+    content: "";
+    background-color: var(--contraste);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 2px);
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+}
+
+.menu a.selected::after,
+.menu a:hover::after{
+    opacity: 1;
+}
+.menu a:hover{
+    color: var(--primario);
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+
+}
+@media (max-width: 950px) {
+
+    .logo{
+        display: flex;
+        align-content: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--texto-2);
+        width: 50%;
+    }
+    .logo img{
+        height: 48px;
+    }
+    
+    /* Menu*/
+    .menu{
+        flex-direction: column;
+        position: fixed;
+        left:0;
+        top:0;
+        width: 100%;
+        align-items: center;
+        background-color: var(--fondo-3);
+        height: 100%;
+        overflow: auto;
+        padding: 0;
+        
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+    .menu li{
+        padding: 0;
+    }
+    .menu a{
+        color: var(--texto-1);
+        line-height: 70px;
+        font-size: 24px;
+    }
+    .open-menu,
+    .close-menu {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+  
+    }
+    .open-menu{
+        align-self: flex-end;
+        padding: 0;
+    }
+    .close-menu{
+        align-self: flex-end;
+        padding: 8px;
+    }
+    .menu_opened{
+        opacity: 1;
+        pointer-events: all;
+    }   
+    .open-menu:focus:not(:focus-visible),
+    .close-menu:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    .menu a::after{
+        content: none;
+    }
+    
+    .menu a:hover,
+    .menu a.selected{
+        color: var(--contraste);
+    }
+
+    
+
+}

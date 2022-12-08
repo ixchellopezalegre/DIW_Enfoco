@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Open+Sans:ital@1&display=swap');
+
+.blog{
+    text-align: center;
+}
+
+.blog-title{
+    margin: 0;
+    font-size: 36px;
+    color: var(--primario);
+    text-align: center;
+    background-image: url(../img/fondo-titulo.svg);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 8px;
+}
+.blog-subtitle{
+    margin: 0;
+}
+.articulos-lista{
+    list-style: none;
+    padding: 16px;
+    margin: 0;
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:36px;
+}
+
+.articulo-tarjeta{
+    display: flex;
+    flex-direction: column;
+    background: var(--degradado-2);
+    border-radius: 16px;
+    position: relative;
+
+    padding: 0px 0px 12px;
+    width: 320px;
+    height: 300px;
+    opacity: 0.8;
+    box-shadow: var(--sombra-1);
+}
+.articulo-tarjeta:hover{
+    box-shadow: var(--sombra-4);
+    filter: brightness(105%);
+}
+.tarjeta-img{
+    width: 100%;
+    height: 40%;
+    border-radius: 16px 16px 0px 0px  ;
+    object-fit: cover;
+    object-position: 80% 70%;
+}
+.tarjeta-contenido{
+    padding: 8px 16px;
+    height: 60%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:2%;
+}
+
+.articulo-categoria{
+    font-family: 'Assistant', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 75%;
+    color: var(--texto-2);
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+.articulo-title{
+    font-family: 'Assistant', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+.articulo-logo{
+    width: 33.33%;
+}
+
+@media (min-width:950px){
+
+} 

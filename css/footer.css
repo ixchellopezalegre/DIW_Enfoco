@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Nobile&family=Open+Sans:ital@1&display=swap');
+
+footer{
+}
+.footer-cont{
+    z-index: 4;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fondo-4);
+}
+
+footer a {
+    color: var(--primario);
+    font-family: 'Assistant', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+footer a:hover{
+    color: var(--contraste);
+}
+.top{
+    z-index: -2;
+    width: 100%;
+    transform: translate(0,9%);
+}
+.top img{
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.footer-logo{
+    width: 45%;
+    align-self: center;
+}
+.footer-logo img{
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.footer-select{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    margin: 0;
+}
+.footer-select i{
+    align-items: flex-end;
+}
+.footer-select a{
+    padding: 0;
+}
+.lista-links{
+    list-style: none;
+    margin: 0;
+}
+.panel{
+    list-style: none;
+    margin-top: 24px;
+    margin-bottom: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content:center;
+    padding-right: 30%;
+}
+.footer-social p{
+    margin: 0;
+    align-self: center;
+}
+.footer-lista{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.links-social{
+    display: flex;
+    flex-direction: row;
+}
+.social-icono{
+    padding: 0 8px;
+    max-width: 100%;
+}
+
+.footer-lista a{
+    padding: 0;
+
+}
+.drop-btn{
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.active, .drop-btn:hover {
+    color:var(--contraste);
+}
+
+
+.lista-categoria{
+    color: var(--negro);
+    font-family: 'Nobile', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+}
+
+
+.copyright{
+    text-align: center;
+    color: var(--blanco);
+    padding-top: 24px;
+    padding-top: 40px;
+    font-size: 8px;
+}
+
+.fondo-footer{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+}
+.fondo-footer img{
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+}
+/* Otro tipo de fondo que no he usado al final */
+/* .img-frente{
+    z-index: -1;
+    
+    display: none;
+}
+.img-medio{
+    z-index: -2;
+    display: none;
+}
+.img-atras{
+    display: none;
+    z-index: -3;
+} */
+
+@media (min-width:950px){
+
+    footer{
+        
+    background-color: var(--degradado-4);
+
+    }
+
+    .footer-cont{
+       align-items:  center;
+  
+    }
+    .footer-logo img{
+        height: 30%;
+    }
+
+    /* .footer-cont{
+    
+        background-image:url(../img/fondo-junto.svg);
+        background-repeat:no-repeat;
+        background-size: contain;
+    } */ 
+    .lista-categoria{
+        font-size: 140%;
+    }
+    .top{
+        display:none;
+    }
+
+    /* .img-frente{
+        z-index: -1;
+        position: absolute;
+        display:block;
+        
+        align-self: baseline;
+    }
+    .img-medio{
+        z-index: -2;
+        position: absolute;
+        display: block;
+        
+        align-self: baseline;
+    }
+    .img-atras{
+        display: block;
+        position: absolute;
+        z-index: -3;
+        align-self: baseline; */
+
+} 

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Nobile&family=Open+Sans:ital@1&display=swap');
+
+.testimonios{
+    background: var(--degradado-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 48px;
+}
+.testimonios-title{
+    margin: 0;
+    font-size: 36px;
+    color: var(--primario);
+    text-align: center;
+    background-image: url(../img/fondo-titulo.svg);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 16px;
+}
+.testimonios-subtitle{
+    margin: 0;
+    padding-bottom: 16px;
+    text-align: center;
+}
+.testimonios-lista{
+    list-style: none;
+    padding: 16px;
+    margin: 0;
+    
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 36px;
+}
+.testimonios-tarjeta{
+    background: var(--fondo-3);
+    box-shadow: var(--sombra-4);
+    border-radius: 8px;
+    display: flex;
+    max-width: 136px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}   
+.tarj-usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+   }
+
+.tarj-usuario img{
+    border-radius: 100%;
+    width: 50%;
+    box-shadow: var(--sombra-2);
+
+}
+.tarj-nombre{
+    font-family: 'Nobile';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 110%;
+    line-height: 25px;
+    text-align: center;
+}
+.tarj-contenido{
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+    /* or 14px */
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.testimonios-tarjeta .rating{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.testimonios-tarjeta .rating span{
+    padding: 2.5%;
+} 
+.testimonios .btn-cta{
+}
+
+@media (max-width: 200px){
+    .tarj-usuario{
+        flex-direction: column;
+    }
+}
+@media (min-width:950px){
+
+    
+
+} 

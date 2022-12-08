@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enfoco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/equipo.css">
+    <link rel="stylesheet" href="css/medios.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/testimonios.css">
+    
+    <link rel="stylesheet" href="css/final.css">
+
+    <link rel="stylesheet" href="css/footer.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img src="img/logotipo.svg" alt="Logotipo de Enfoco">
+            </a>
+            <button class="open-menu" aria-label="Abrir menú">
+                <i class="fas fa-solid fa-bars fa-3x" alt="Abrir menú"></i>
+            </button>
+            <ul class="menu">
+                <button class="close-menu" aria-label="Cerrar menú">
+                    <i class="fas fa-solid fa-xmark fa-4x" alt="Cerrar menú"></i>
+                </button>
+                <li><a href="#Terapia">Terapia</a></li>
+                <li><a href="#Cursos">Cursos</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#Acceso">Acceso</a></li>
+                <li><a href="#Registro">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero horizontal-padding vertical-padding"> 
+        <span class="hero-logo-img">
+            <img src="img/enfoco.svg" alt="ENFOCO. Aquí tu eres el foco.">
+        </span>
+        <div class="hero-info">
+            <span class="hero-info-img">
+                <img class="img" src="img/world-animate.svg" alt="Persona_sentada_en_mundo">
+            </span>
+            <div class="hero-info-content">
+                <h2 class="hero-info-content-title">Estás a punto de cambiarlo todo</h2>
+                <p class="hero-info-content-detail">
+                    Realizar nuestro test previo no te llevará más de 5 minutos.
+                </p>
+                <button class="btn btn-hero">
+                    Hacer el test ahora
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="medios">
+        <h2 class="medios-title horizontal-padding vertical-padding"> Hablan de nosotros en: </h2>
+            <ul class="medios-lista">
+                <li class="medios-img">
+                    <img src="img/HuffPost.svg" alt="HuffPost">
+                </li>
+                <li class="medios-img">
+                    <img src="img/laVanguardia.svg" alt="HuffPost">
+                </li>
+                <li class="medios-img">
+                    <img src="img/Vanity_Fair.png" alt="HuffPost">
+                </li>
+                
+                <li class="medios-img">
+                    <img src="img/logo_kiosko.png" alt="HuffPost">
+                </li>
+            </ul>
+    </section>
+    <section class="equipo horizontal-padding vertical-padding">
+        <h2 class="equipos-title">Conoce a nuestro equipo</h2>
+        <p class="equipos-subtitle">Profesionales multidisplinares a tu disposición</p>
+            <!-- Swiper -->
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">   
+                            <img class="tarjeta-avatar" src="img/perfil1.jpg" alt="avatar_Alberto">
+                            <p class="tarjeta-title">Alberto Pérez Oyosa</p>
+                            <p class="tarjeta-subtitle">Psicólogo colegiado M-22212</p>
+                            <button class="btn">Conocer a Alberto</button>
+                        </div>
+                        <div class="swiper-slide"> 
+                            <img class="tarjeta-avatar" src="img/perfil2.jpg" alt="avatar_Susana">
+                            <p class="tarjeta-title">Susana Ramirez Gil</p>
+                            <p class="tarjeta-subtitle">Psicóloga colegiada M-16432</p>
+                            <button class="btn">Conocer a Susana</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tarjeta-avatar" src="img/perfil5.jpg" alt="avatar_David">
+                            <p class="tarjeta-title">David Beltrán Yoe</p>
+                            <p class="tarjeta-subtitle">Psicólogo colegiado M-22212</p>
+                            <button class="btn">Conocer a David</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tarjeta-avatar" src="img/perfil3.jpg" alt="avatar_ramia">
+                            <p class="tarjeta-title">Ramia Recio Arjona</p>
+                            <p class="tarjeta-subtitle">Psicólogo colegiado M-22212</p>
+                            <button class="btn">Conocer a Ramia</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tarjeta-avatar" src="img/perfil4.jpg" alt="avatar_Fani">
+                            <p class="tarjeta-title">Fani Olmo Torres</p>
+                            <p class="tarjeta-subtitle">Psicólogo colegiado M-79322</p>
+                            <button class="btn">Conocer a Fani</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tarjeta-avatar" src="img/perfil4.jpg" alt="avatar_Fani">
+                            <p class="tarjeta-title">Fani Olmo Torres</p>
+                            <p class="tarjeta-subtitle">Psicólogo colegiado M-79322</p>
+                            <button class="btn">Conocer a Fani</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tarjeta-avatar" src="img/perfil3.jpg" alt="avatar_ramia">
+                            <p class="tarjeta-title">Ramia Recio Arjona</p>
+                            <p class="tarjeta-subtitle">Psicólogo colegiado M-22212</p>
+                            <button class="btn">Conocer a Ramia</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tarjeta-avatar" src="img/perfil4.jpg" alt="avatar_Fani">
+                            <p class="tarjeta-title">Fani Olmo Torres</p>
+                            <p class="tarjeta-subtitle">Psicólogo colegiado M-79322</p>
+                            <button class="btn">Conocer a Fani</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tarjeta-avatar" src="img/perfil4.jpg" alt="avatar_Fani">
+                            <p class="tarjeta-title">Fani Olmo de la Torre</p>
+                            <p class="tarjeta-subtitle">Psicólogo colegiado M-79322</p>
+                            <button class="btn">Conocer a Fani</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        <p class="equipos-destacado">¿Quieres saber lo que la gente como tú dice de nosotros?</p>
+        <button class="btn-cta">Leer rewievs</button>  
+    </section>
+    <section class="about horizontal-padding vertical-padding">
+        <div class="about-row">
+            <div class="about-column">
+                <div class="column-header">
+                    <h2 class="column-title">¿Qué es el TDAH?</h2>
+                    <p class="column-subtitle">¿Un trastorno, una enfermedad,...?</p>
+                </div>
+                <p class="column-contenido">Lo conocerás por sus  síntomas:  distraerse con facilidad, memoria que falla y falta de atención. A menudo, las personas con TDAH tienen dificultad para enfocarse en la escuela, pierden la noción del tiempo fácilmente y suelen olvidarse de sus citas.</p>
+                <h3 class="column-destacado">¿Te suena?</h3>
+                <button class="inline btn-cta">Quiero saber más</button>
+            </div>
+            <span class="column-img">
+                <img class="column-img" src="img/thoughts-animate.svg" alt="">
+            </span>
+        </div>
+        <div class="reves about-row">
+            <div class="about-column">
+                <div class="column-header">
+                    <h2 class="column-title">¿Sirve de algo el diagnóstico?</h2>
+                    <p class="column-subtitle">¿No tenemos todos TDAH?</p>
+                </div>
+                <p class="column-contenido">Todos somos despistados a veces, pero el TDAH va mucho más allá. 
+                    A través de nuestro test previo podrás hacerte una idea si podrías necesitar una valoración más profunda.</p>
+                <h3 class="column-destacado">¿Te suena?</h3>
+                <button class="inline btn-cta">Quiero saber más</button>
+            </div>
+            <span class="column-img">
+                <img class="column-img" src="img/psychologist-animate.svg" alt="">
+            </span>
+        </div>
+        <div class="about-row">
+            <div class="about-column">
+                <div class="column-header">
+                    <h2 class="column-title">Vale, ya se lo que me pasa...</h2>
+                    <p class="column-subtitle">¿Ahora qué?</p>
+                </div>
+                <p class="column-contenido">En ENFOCO podrás encontrar servicios de terapia, psiquiatria, coaching,  
+                    mas de 20 cursos y talleres para seguir conociendo en profundidad el TDAH.
+                    Todo nuestro contenido está enfocado a ti pero también ofrecemos recursos dirigidos 
+                    a ayudar a alguin cercano a ti que puede que también sospeche tener TDAH</p>
+                <h3 class="column-destacado">¡Acabas de encontrar tu sitio!</h3>
+                <button class="inline btn-cta">Quiero saber más</button>
+            </div>
+            <span class="column-img">
+                <img class="column-img" src="img/welcome-animate.svg" alt="">
+            </span>
+        </div>
+    </section>
+    <section class="servicios horizontal-padding vertical-padding">
+            <div class="servicios-img">
+                <img src="img/wallet-animate.svg" alt="">
+            </div>
+            <div class="servicios-cont">
+                <p class="servicio-subtitle">PSICOLOGÍA ONLINE A PRECIOS AJUSTADOS</p>
+                <h2 class="servicios-title">Haz tu primera consulta cognoscitiva gratis y después decide si deseas continuar</h2>          
+                    <p class="servicio-content">
+                    En ENFOCO siempre sabes cuánto vas a pagar por tu terapia. 
+                    Nosotros encontramos el psicólogo online adecuado a tu caso y tienes tu primera consulta <b>gratuita</b>.
+                    ¿Qué pasa después? Tú eliges si decides seguir adelante. En ese caso, pagarás 34 € por cada sesión individual 
+                    y 44 € en el caso de terapia de padres e hijos</p>
+            </div>
+    </section>
+    <section class="blog horizontal-padding vertical-padding">
+        <h2 class="blog-title">Nuestro blog</h2>
+        <p class="blog-subtitle">Aquí podras encontrar lo último en divulgación acerca del TDAH.</p>
+        <ul class="articulos-lista">
+            <li class="articulo-tarjeta">
+                <img class="tarjeta-img" src="img/blog1.jpg" alt="mujer_canoa_bienestar">
+                <div class="tarjeta-contenido">
+                    <p class="articulo-categoria">Bienestar</p>
+                    <p class="articulo-title">¿Como afecta el TDAH a la ansiedad social?</p>
+                    <button class="btn">Leer más</button>
+                    <img src="img/logo-color.svg" class="articulo-logo" alt="Logo-enfoco">
+                </div>
+            </li>
+            <li class="articulo-tarjeta">
+                <img class="tarjeta-img" src="img/blog2.jpg" alt="mujer_pesas">
+                <div class="tarjeta-contenido">
+                    <p class="articulo-categoria">Deporte</p>
+                    <p class="articulo-title">Be Strong! Porque el deporte es una parte muy importante de tí.</p>
+                    <button class="btn">Leer más</button>
+                    <img src="img/logo-color.svg" class="articulo-logo" alt="Logo-enfoco">
+                </div>
+            </li>
+            <li class="articulo-tarjeta">
+                <img class="tarjeta-img" src="img/blog3.jpg" alt="gatp_closeup">
+                <div class="tarjeta-contenido">
+                    <p class="articulo-categoria">Animales</p>
+                    <p class="articulo-title">Son tan fieles y puros al ser humano. Descubre todo de ellos</p>
+                    <button class="btn">Leer más</button>
+                    <img src="img/logo-color.svg" class="articulo-logo" alt="Logo-enfoco">
+                </div>
+            </li>
+            <li class="articulo-tarjeta">
+                <img class="tarjeta-img" src="img/blog4.jpg" alt="gatp_closeup">
+                <div class="tarjeta-contenido">
+                    <p class="articulo-categoria">Salud</p>
+                    <p class="articulo-title">La cafeína, ¿una opción para tratar el TDAH?</p>
+                    <button class="btn">Leer más</button>
+                    <img src="img/logo-color.svg" class="articulo-logo" alt="Logo-enfoco">
+                </div>
+            </li>
+        </ul>
+            <button class="btn-cta">Descubre todos nuestros artículos</button>
+    </section>
+    <section class="newsletter horizontal-padding vertical-padding">
+        <div class="newsletter-content">
+            <span class="newsletter-img">
+                <img class="img" src="img/envelope-animate.svg" alt="Persona_sentada_en_mundo">
+            </span>
+            <div class="newsletter-text">
+                <h2 class="newsletter-title">Nuestro Newsletter</h2>
+                <p class="newsletter-subtitle">
+                    Cada semana te enviaremos un cachito de nuestra filosofia a tu mail.
+                </p>
+                <button class="btn-cta">
+                    Subscríbete a nuestro newsletter
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="testimonios horizontal-padding vertical-padding">
+        <h2 class="testimonios-title">Porque sabemos que es mejor verlo que creerlo</h2>
+        <p class="testimonios-subtitle">Esto es lo que dicen de nosotros</p>
+        <ul class="testimonios-lista">
+            <li class="testimonios-tarjeta">
+                <div class="tarj-usuario">
+                    <img src="img/avatar1.jpg" classs="tarj-avatar" src="" alt="avatar_Ana">
+                    <p class="tarj-nombre">Tere</p>
+                </div>
+                <p class="tarj-contenido">Imprescindible, lo he recomendado a todo mi entorno.</p>
+                <div class="rating">
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star-half-stroke filled"></span>
+                        <span class="fa fa-regular fa-star filled"></span>
+                </div>
+            </li>
+            <li class="testimonios-tarjeta">
+                <div class="tarj-usuario">
+                    <img src="img/avatar2.jpg" classs="tarj-avatar" src="" alt="avatar_Felix">
+                    <p class="tarj-nombre">Félix</p>
+                </div>
+                <p class="tarj-contenido">Estoy encantado, desde que empecé la terapia soy otra persona.</p>
+                <div class="rating">
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star-half-stroke filled"></span>
+                        <span class="fa fa-regular fa-star filled"></span>
+                </div>
+            </li>
+            <li class="testimonios-tarjeta">
+                <div class="tarj-usuario">
+                    <img src="img/avatar3.jpg" classs="tarj-avatar" src="" alt="avatar_Julia">
+                    <p class="tarj-nombre">Ana</p>
+                </div>
+                <p class="tarj-contenido">Me ha costado un poco adaptarme a las actividades.</p>
+                <div class="rating">
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star-half-stroke filled"></span>
+                        <span class="fa fa-regular fa-star filled"></span>
+                </div>
+            </li>
+            <li class="testimonios-tarjeta">
+                <div class="tarj-usuario">
+                    <img src="img/avatar4.jpg" classs="tarj-avatar" src="" alt="avatar_Julia">
+                    <p class="tarj-nombre">Irene</p>
+                </div>
+                <p class="tarj-contenido">No tenía muchas expectativas. Gratamente sorprendida.</p>
+                <div class="rating">
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star-half-stroke filled"></span>
+                </div>
+            </li>
+            <li class="testimonios-tarjeta">
+                <div class="tarj-usuario">
+                    <img src="img/avatar5.jpg" classs="tarj-avatar" src="" alt="avatar_Julia">
+                    <p class="tarj-nombre">Jose</p>
+                </div>
+                <p class="tarj-contenido">Agradecido que este sitio exista.</p>
+                <div class="rating">
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star-half-stroke filled"></span>
+                </div>
+            </li>
+            <li class="testimonios-tarjeta">
+                <div class="tarj-usuario">
+                    <img src="img/avatar6.jpg" classs="tarj-avatar" src="" alt="avatar_Julia">
+                    <p class="tarj-nombre">María</p>
+                </div>
+                <p class="tarj-contenido">Podría mejorar el contenido de los cursos.</p>
+                <div class="rating">
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-star filled"></span>
+                        <span class="fa fa-regular fa-star filled"></span>
+                        <span class="fa fa-regular fa-star filled"></span>
+                </div>
+            </li>
+        </ul>
+        </div>
+        <button class="btn-cta">Leer todas las reviews</button>
+    </section>
+    <section class="final horizontal-padding vertical-padding">
+        <span class="final-img">
+            <img src="img/enthusiastic-animate.svg" alt="ENFOCO. Aquí tu eres el foco.">
+        </span>
+        <div class="final-info">
+            <h2 class="final-info-title">Estás a punto de cambiarlo todo</h2>
+            <span class="final-info-img">
+                <img class="img" src="img/logo-color.svg" alt="Enfoco_logo">
+                <img class="img" src="img/ahora-estas-aqui.svg" alt="Ahora_estás_aquí">
+            </span>
+
+        </div>
+    </section>
+    <button class="btn-cta btn-final" onclick="topFunction()" id="btnFinal">
+        Volver arriba
+    </button>
+    <footer>
+        <img class="top" src="img/footer-bg-top.svg" alt="">
+        <div class="footer-cont horizontal-padding vertical-padding">
+            <div class="footer-logo">
+                <img src="img/logo-blanco.svg" alt="">
+            </div>
+            <div class="footer-select">
+                <p class="lista-categoria">Servicios</p>
+                <i class="drop-btn fas fa-solid fa-chevron-down"></i>
+            <div class="panel">
+                <ul class="lista-links">
+                    <li class="footer-link">
+                        <a href="#">Terapia</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Cursos</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Psiquiatra</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-select">
+                <p class="lista-categoria">Sobre ENFOCO</p>
+                <i class="drop-btn fas fa-solid fa-chevron-down"></i>
+                <ul class="panel">
+                    <li class="footer-link">
+                        <a href="#">¿Quienes somos?</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Nuestra filosofia</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-select">
+                <p class="lista-categoria">Contacto y FAQs</p>
+                <i class="drop-btn fas fa-solid fa-chevron-down"></i>
+                <ul class="panel">
+                    <li class="footer-link">
+                        <a href="#">FAQs</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-select">
+                <p class="lista-categoria">Terminos y condiciones</p>
+                <i class="drop-btn fas fa-solid fa-chevron-down"></i>
+                <ul class="panel">
+                    <li class="footer-link">
+                        <a href="#">Terminos y condiciones</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Política de privacidad</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Política de cookies</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <p class="lista-categoria">Siguenos en:</p>
+                <div class="links-social">
+                    <a class="social-icono" href=""><i class="fas fa-brands fa-google fa-2x"></i></a>                     
+                    <a class="social-icono" href=""><i class="fas fa-brands fa-facebook-f fa-2x"></i></a>
+                    <a class="social-icono" href=""><i class="fas fa-brands fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        
+            <div class="copyright">
+                © 2022 Alegre Srl- CIF 075164234210
+            </div>
+        </div>
+    </footer>
+    <!-- Para el slide de Servicios -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Iniciando Swiper Slider -->
+
+
+</body>
+</html>

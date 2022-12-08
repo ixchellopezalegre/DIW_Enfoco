@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Nobile&family=Open+Sans:ital@1&display=swap');
+
+/*Aqui tengo todas las variables de color*/
+
+:root{
+    --primario:#0F4D79;
+    --contraste:#FAC969;
+    --contraste-oscuro: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #FAC969;
+    --secundario: #17A8B5;
+    --error:#BA1A1A;
+    --neutral: #D0D0D0;
+    --neutral-oscuro: #636363;
+    --degradado-1: linear-gradient(90deg, rgba(103,177,244,0.32488329804578087) 0%, rgba(139,232,215,1) 100%);
+    --degradado-2: linear-gradient(0deg, rgba(15, 77, 121, 0.1), rgba(15, 77, 121, 0.1)), #F2FFFF;
+    --degradado-3: linear-gradient(0deg, rgba(15, 77, 121, 0.1), rgba(15, 77, 121, 0.1) ), #F2FFFF;
+    --degradado-4: linear-gradient(180deg, rgba(116, 122, 163, 0) 0%, #749DA3 100%);
+    --boton_azul: #277CBC; 
+    --texto-1:#000000;
+    --texto-2: #008490;
+    --fondo-1:#F3F7F8;
+    --fondo-2:#F7FCFC;
+    --fondo-3:#E9F6F8;
+    --fondo-4:#DBEDF2;
+    --negro:#000000;
+    --blanco: #FFFFFF;
+    --sombra-hd:0px 10px 11px rgba(0, 0, 0, 0.25);
+    --sombra-1: 1px 1px 2px rgba(0, 0, 0, 0.3), 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --sombra-2: 1px 1px 2px rgba(0, 0, 0, 0.3), 2px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    --sombra-3: 4px 4px 8px 3px rgba(0, 0, 0, 0.15), 1px 1px 3px rgba(0, 0, 0, 0.3);
+    --sombra-4: 6px 6px 10px 4px rgba(0, 0, 0, 0.15), 2px 2px 3px rgba(0, 0, 0, 0.3);
+    --sombra-5: 8px 8px 12px 6px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--fondo-1);
+    color:var(--texto-1);
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color:var(--texto-1);
+}
+h2{
+    font-family: 'Nobile',sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+h3{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 800;
+    line-height: 34px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+p{
+    font-family: 'Assistant', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color:var(--negro);
+    
+}
+img{
+    max-width: 650px;
+}
+button{
+    font-family: 'Open Sans', 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1px;
+    border-radius: 32px;
+    border: none;
+    /*Para que sea responsive*/
+    padding: 0.5rem 1rem;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.horizontal-padding{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.vertical-padding{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.btn{
+    background: var(--boton_azul);
+    color:var(--blanco);
+}
+.btn:hover{
+    background: var(--primario);
+    /*Mejor que sombra*/
+    filter: brightness(130%);
+    color: var(--blanco);
+}
+.btn-cta{
+    background: var(--contraste);
+    color:var(--neutral-oscuro);
+}
+.btn-cta:hover{
+    background: var(--contraste-oscuro);
+    filter: brightness(130%);
+    color: var(--blanco);
+}
+
+.filled{
+        color: var(--contraste);
+}
+
+@media (min-width:950px){
+    .horizontal-padding{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .vertical-padding{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+}

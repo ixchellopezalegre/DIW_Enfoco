@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nobile:ital@1&family=Open+Sans&display=swap');
+ 
+.final{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.final-info{
+    /* margin-bottom: 24px; */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    gap: 8px;
+}
+.final-img{
+    width: 80%;
+}
+.final-img img{
+     width: 80%;
+}
+
+.final-info-title{
+    margin: 0;
+    font-size: 150%;
+    line-height: 46px;
+    letter-spacing: 0em;
+    color: var(--primario);
+    text-align: center;
+    padding-bottom: 24px;
+}
+.final-info-img{
+    width: 80%;
+    padding-bottom: 24px;
+}
+.btn-final{
+    width: 30%;
+  display: none; /* Hidden by default */
+ justify-content: center;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 40px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  opacity: 0.4;
+}
+
+.btn-final:hover {
+    opacity: 1;
+}
+
+@media(min-width: 950px){
+ 
+    .final{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+}
